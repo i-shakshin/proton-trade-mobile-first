@@ -9,183 +9,318 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__body">
-          <a href="#" class="header__logo">
-            <img src="images/logo.svg" alt="logo" />
-          </a>
-          <div class="header__burger">
-            <span></span>
-          </div>
-          <nav class="header__menu">
-            <ul class="header__list">
-              <li>
-                <a href="#" class="header__link">Наши возможности</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Что вы получаете</a>
-              </li>
-              <li>
-                <a href="#" class="header__link">Партнеры</a>
-              </li>
-            </ul>
-          </nav>
+    <header class="header container">
+      <div class="header__body">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
+        <div class="header__burger">
+          <span></span>
         </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a href="#" class="header__link">Наши возможности</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Что вы получаете</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Партнеры</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <section class="banner-main background">
-      <div class="container">
-        <div class="main-body">
-          <div class="main-body__description">
-            <h3 class="main-body__title">Робот-помощник</h3>
-            <h1 class="main-body__name">Proton Trade</h1>
-            <h3 class="main-body__subtitle">
-              Облегчает торговлю на крипторынке
-            </h3>
-          </div>
-          <div class="main-body__description-use">
-            <button class="main-body__description-btn">
-              <div class="main-body__description-btn-text">Попробовать</div>
-              <img
-                class="main-body__description-btn-arrow"
-                src="images/btn-arrow.svg"
-              />
-            </button>
-            <span class="main-body__description-count"
-              >Уже используют: 589 человек</span
-            >
-          </div>
+    <section class="banner-main container background">
+      <div class="main-body">
+        <div class="main-body__description">
+          <h3 class="main-body__title">Робот-помощник</h3>
+          <h1 class="main-body__name">Proton Trade</h1>
+          <h3 class="main-body__subtitle">Облегчает торговлю на крипторынке</h3>
+        </div>
+        <div class="main-body__description-use">
+          <button class="main-body__description-btn">
+            <div class="main-body__description-btn-text">Попробовать</div>
+            <img
+              class="main-body__description-btn-arrow"
+              src="images/btn-arrow.svg"
+            />
+          </button>
+          <span class="main-body__description-count"
+            >Уже используют: 589 человек</span
+          >
         </div>
       </div>
     </section>
     <main class="main">
-      <section class="possibilities">
-        <div class="container">
-          <div class="statistics-card-container">
-            <ul class="statistics-card-body">
-              <li class="statistics-card-body__description">
-                <h1 class="statistics-card-body__counting">8 474</h1>
-                <p class="statistics-card-body__title">Криптовалюты</p>
-              </li>
-              <li class="statistics-card-body__description">
-                <h1 class="statistics-card-body__counting">$1.5T</h1>
-                <p class="statistics-card-body__title">Капитализация рынка</p>
-              </li>
-              <li class="statistics-card-body__description">
-                <h1 class="statistics-card-body__counting">>$214Bn</h1>
-                <p class="statistics-card-body__title">Объем за 24ч</p>
-              </li>
-              <li class="statistics-card-body__description">
-                <h1 class="statistics-card-body__counting">61,1%</h1>
-                <p class="statistics-card-body__title">BTC Dominance</p>
-              </li>
-            </ul>
-          </div>
-          <div class="possibilities-card-container">
-            <ul class="possibilities-card-body">
-              <li class="possibilities-card-body__content">
-                <h1 class="possibilities-card-body__heading">
-                  Наши возможности
-                </h1>
-              </li>
-              <li class="possibilities-card-body__content">
-                <div class="possibilities-card-body__img">
-                  <img src="images/1.svg" alt="possibilities-img" />
-                </div>
+      <div class="bg-gray">
+        <section class="statistics container">
+          <ul class="statistics-card-body">
+            <li class="statistics-card-body__description">
+              <h1 class="statistics-card-body__counting">8 474</h1>
+              <p class="statistics-card-body__title">Криптовалюты</p>
+            </li>
+            <li class="statistics-card-body__description">
+              <h1 class="statistics-card-body__counting">$1.5T</h1>
+              <p class="statistics-card-body__title">Капитализация рынка</p>
+            </li>
+            <li class="statistics-card-body__description">
+              <h1 class="statistics-card-body__counting">>$214Bn</h1>
+              <p class="statistics-card-body__title">Объем за 24ч</p>
+            </li>
+            <li class="statistics-card-body__description">
+              <h1 class="statistics-card-body__counting">61,1%</h1>
+              <p class="statistics-card-body__title">BTC Dominance</p>
+            </li>
+          </ul>
+        </section>
+        <section class="possibilities container">
+          <ul class="possibilities-card-container">
+            <li class="possibilities-card-body">
+              <h1 class="possibilities-card-body__heading">Наши возможности</h1>
+            </li>
+            <li class="possibilities-card-body">
+              <div class="possibilities-card-body__img">
+                <img src="images/1.svg" alt="possibilities-img" />
+              </div>
 
-                <h3 class="possibilities-card-body__title">Покажем тренды</h3>
-                <p class="possibilities-card-body__description">
-                  Робот-помощник анализирует актив и дает рекомендации по
-                  направлению торговли на нескольких таймфреймах: H1, М30 и М15
+              <h3 class="possibilities-card-body__title">Покажем тренды</h3>
+              <p class="possibilities-card-body__description">
+                Робот-помощник анализирует актив и дает рекомендации по
+                направлению торговли на нескольких таймфреймах: H1, М30 и М15
+              </p>
+              <h3 class="possibilities-card-body__subtitle">
+                Как использовать
+              </h3>
+              <p class="possibilities-card-body__subdescription">
+                Не рекомендовано торговать в шорт если бот рекомендует торговать
+                в лонг на всех таймфреймах.
+              </p>
+            </li>
+            <li class="possibilities-card-body">
+              <div class="possibilities-card-body__img">
+                <img src="images/2.svg" alt="possibilities-img" />
+              </div>
+              <h3 class="possibilities-card-body__title">
+                Stop lose & Take Profit
+              </h3>
+              <p class="possibilities-card-body__description">
+                Робот-помощник анализирует волатильность актива за несколько
+                дней, рассчитывает размер Stop lose и многоуровневый Take profit
+                для возможности максимизации прибыль и минимизации убытков.
+              </p>
+              <h3 class="possibilities-card-body__subtitle">
+                Как использовать
+              </h3>
+              <p class="possibilities-card-body__subdescription">
+                Получив рассчитанные Stop lose и Take profit вам остается
+                выставить ордера.
+              </p>
+            </li>
+            <li class="possibilities-card-body">
+              <div class="possibilities-card-body__img">
+                <img src="images/3.svg" alt="possibilities-img" />
+              </div>
+              <h3 class="possibilities-card-body__title">Волатильность</h3>
+              <p class="possibilities-card-body__description">
+                Робот-помощник анализирует актив и показывает волатильность в
+                процентах и пунктах.
+              </p>
+              <h3 class="possibilities-card-body__subtitle">
+                Как использовать
+              </h3>
+              <p class="possibilities-card-body__subdescription">
+                Чем больше/меньше волатильность, тем больше/меньше должны быть
+                стоп-лос и тейк-профиты.
+              </p>
+            </li>
+            <li class="possibilities-card-body">
+              <div class="possibilities-card-body__img">
+                <img src="images/4.svg" alt="possibilities-img" />
+              </div>
+              <h3 class="possibilities-card-body__title">Ближайшие уровни</h3>
+              <p class="possibilities-card-body__description">
+                Робот-помощник анализирует актив и показывает два ближайших
+                ценовых уровня в рамках 500 свечей
+              </p>
+              <h3 class="possibilities-card-body__subtitle">
+                Как использовать
+              </h3>
+              <p class="possibilities-card-body__subdescription">
+                Необходимо нанести на график уровни показанные ботом. На этих
+                ценовых уровнях скапливается большая ликвидность. От этих
+                ценовых уровнях будут сильные движения.
+              </p>
+            </li>
+            <li class="possibilities-card-body">
+              <div class="possibilities-card-body__img">
+                <img src="images/5.svg" alt="possibilities-img" />
+              </div>
+              <h3 class="possibilities-card-body__title">
+                Актуальная информация
+              </h3>
+              <p class="possibilities-card-body__description">
+                Отображает цену актива в долларах и биткойнах.
+              </p>
+              <h3 class="possibilities-card-body__subtitle">
+                Как использовать
+              </h3>
+              <p class="possibilities-card-body__subdescription">
+                Помогает следить за ценой выбранного актива. если вы не за
+                компьютером.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="getting container">
+        <ul class="getting-container">
+          <li class="getting-container__header">
+            <h1 class="getting-container__heading">Что вы получаете</h1>
+          </li>
+          <li class="getting-container__img">
+            <img src="images/getting-1.svg" alt="getting-image-1" />
+          </li>
+          <li class="getting-container__text">
+            <h3 class="getting-container__title">
+              Увеличится % положительных сделок
+            </h3>
+            <p class="getting-container__description">
+              При следовании рекомендациям робота-помощника все ваши сделки
+              будут по тренду, что увеличит % положительных сделок.
+            </p>
+          </li>
+          <li class="getting-container__img">
+            <img src="images/getting-2.svg" alt="getting-image-2" />
+          </li>
+          <li class="getting-container__text">
+            <h3 class="getting-container__title">Понятный риск-менеджмент</h3>
+            <p class="getting-container__description">
+              Всегда правильные стоп-лос и тейк-профит, расчитаный на основании
+              волатильности инструмента, а не мифические и не понятные 5%, 20%,
+              30% неизвестно от чего.
+            </p>
+          </li>
+          <li class="getting-container__img">
+            <img src="images/getting-3.svg" alt="getting-image-3" />
+          </li>
+          <li class="getting-container__text">
+            <h3 class="getting-container__title">
+              Уменьшение количества убыточных сделок
+            </h3>
+            <p class="getting-container__description">
+              За счет автоматического поиска уровней, вы сможете сократить число
+              не системных сделок совершая сделки от ценовых уровней.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="banner container banner-background">
+        <div class="banner-body">
+          <div class="banner-body__description">
+            <h3 class="banner-body__title">Робот-помощник</h3>
+            <h1 class="banner-body__name">Proton Trade</h1>
+          </div>
+          <button class="banner-body__description-btn">
+            <div class="banner-body__description-btn-text">Попробовать</div>
+            <img
+              class="banner-body__description-btn-arrow"
+              src="images/btn-arrow.svg"
+            />
+          </button>
+        </div>
+        <div class="banner-body__image">
+          <img src="images/banner-image.svg" />
+        </div>
+      </section>
+      <section class="partners container">
+        <div class="partners-container">
+          <div class="partners-text">
+            <div class="partners-text__title">Партнеры</div>
+            <div class="partners-text__description">
+              Биржи с которыми мы сотрудничаем
+            </div>
+          </div>
+          <div class="partners-logo">
+            <img src="images/binance-logo.svg" alt="binance-logo" />
+            <img src="images/huobi-logo.png" alt="huobi-logo" />
+            <img src="images/okex-logo.svg" alt="okex-logo" />
+            <img src="images/bitfinex-logo.svg" alt="bitfinex-logo" />
+            <img src="images/hitbtc-logo.svg" alt="hitbtc-logo" />
+            <img src="images/bitstamp-logo.svg" alt="bitstamp-logo" />
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="bg-gray pd-60">
+          <div class="feedback-container container">
+            <div class="feedback-text">
+              <div class="feedback-text__title">Для связи с нами</div>
+              <div class="feedback-text__description">
+                Можете задать нам любой вопрос про бота
+              </div>
+            </div>
+            <form class="feedback-form" action="/my-form-page" method="post">
+              <div class="feedback-form__name">
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  class="input-name"
+                  placeholder="Имя"
+                />
+              </div>
+
+              <div class="feedback-form__mail">
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  class="input-email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <div class="feedback-form__msg">
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  class="input-textarea"
+                  placeholder="Сообщение"
+                ></textarea>
+                <span class="symbols-counter">0/500</span>
+              </div>
+
+              <div>
+                <p class="feedback-form__personal-data">
+                  Нажимая на кнопку «Отправить вопрос», вы даете согласие на
+                  обработку персональных данных.
                 </p>
-                <h3 class="possibilities-card-body__subtitle">
-                  Как использовать
-                </h3>
-                <p class="possibilities-card-body__subdescription">
-                  Не рекомендовано торговать в шорт если бот рекомендует
-                  торговать в лонг на всех таймфреймах.
-                </p>
-              </li>
-              <li class="possibilities-card-body__content">
-                <div class="possibilities-card-body__img">
-                  <img src="images/2.svg" alt="possibilities-img" />
-                </div>
-                <h3 class="possibilities-card-body__title">
-                  Stop lose & Take Profit
-                </h3>
-                <p class="possibilities-card-body__description">
-                  Робот-помощник анализирует волатильность актива за несколько
-                  дней, рассчитывает размер Stop lose и многоуровневый Take
-                  profit для возможности максимизации прибыль и минимизации
-                  убытков.
-                </p>
-                <h3 class="possibilities-card-body__subtitle">
-                  Как использовать
-                </h3>
-                <p class="possibilities-card-body__subdescription">
-                  Получив рассчитанные Stop lose и Take profit вам остается
-                  выставить ордера.
-                </p>
-              </li>
-              <li class="possibilities-card-body__content">
-                <div class="possibilities-card-body__img">
-                  <img src="images/3.svg" alt="possibilities-img" />
-                </div>
-                <h3 class="possibilities-card-body__title">Волатильность</h3>
-                <p class="possibilities-card-body__description">
-                  Робот-помощник анализирует актив и показывает волатильность в
-                  процентах и пунктах.
-                </p>
-                <h3 class="possibilities-card-body__subtitle">
-                  Как использовать
-                </h3>
-                <p class="possibilities-card-body__subdescription">
-                  Чем больше/меньше волатильность, тем больше/меньше должны быть
-                  стоп-лос и тейк-профиты.
-                </p>
-              </li>
-              <li class="possibilities-card-body__content">
-                <div class="possibilities-card-body__img">
-                  <img src="images/4.svg" alt="possibilities-img" />
-                </div>
-                <h3 class="possibilities-card-body__title">Ближайшие уровни</h3>
-                <p class="possibilities-card-body__description">
-                  Робот-помощник анализирует актив и показывает два ближайших
-                  ценовых уровня в рамках 500 свечей
-                </p>
-                <h3 class="possibilities-card-body__subtitle">
-                  Как использовать
-                </h3>
-                <p class="possibilities-card-body__subdescription">
-                  Необходимо нанести на график уровни показанные ботом. На этих
-                  ценовых уровнях скапливается большая ликвидность. От этих
-                  ценовых уровнях будут сильные движения.
-                </p>
-              </li>
-              <li class="possibilities-card-body__content">
-                <div class="possibilities-card-body__img">
-                  <img src="images/5.svg" alt="possibilities-img" />
-                </div>
-                <h3 class="possibilities-card-body__title">
-                  Актуальная информация
-                </h3>
-                <p class="possibilities-card-body__description">
-                  Отображает цену актива в долларах и биткойнах.
-                </p>
-                <h3 class="possibilities-card-body__subtitle">
-                  Как использовать
-                </h3>
-                <p class="possibilities-card-body__subdescription">
-                  Помогает следить за ценой выбранного актива. если вы не за
-                  компьютером.
-                </p>
-              </li>
-            </ul>
+              </div>
+
+              <div class="feedback-form__button">
+                <button type="submit" class="button-feedback">
+                  Отправить вопрос
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="footer-info container">
+        <div class="footer-info__description">
+          <p class="footer-info__text">Пользовательское соглашение</p>
+          <p class="footer-info__text">
+            © 2020 - 2021. Proton Trade. All rights reserved
+          </p>
+          <p class="footer-info__text">info@proton-trade.ru</p>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
     <script src="js/script.js"></script>
   </body>
