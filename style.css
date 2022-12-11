@@ -281,8 +281,6 @@ body.lock {
   justify-content: center;
 
   gap: 24px;
-
-  padding: 60px 0px;
 }
 
 .statistics-card-body__description {
@@ -406,10 +404,6 @@ body.lock {
   line-height: 21px;
 
   margin-top: 5px;
-}
-
-.getting {
-  padding-top: 60px;
 }
 
 .getting-container {
