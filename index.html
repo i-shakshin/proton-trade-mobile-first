@@ -32,7 +32,7 @@
         </nav>
       </div>
     </header>
-    <section class="banner-main container background">
+    <section class="banner-main container">
       <div class="main-body">
         <div class="main-body__description">
           <h3 class="main-body__title">Робот-помощник</h3>
@@ -77,14 +77,11 @@
         </section>
         <section class="possibilities pd-60">
           <ul class="possibilities-card-container container">
-            <li class="possibilities-card-body">
-              <h1 class="possibilities-card-body__heading">Наши возможности</h1>
-            </li>
+            <h1 class="possibilities-card-body__heading">Наши возможности</h1>
             <li class="possibilities-card-body">
               <div class="possibilities-card-body__img">
                 <img src="images/1.svg" alt="possibilities-img" />
               </div>
-
               <h3 class="possibilities-card-body__title">Покажем тренды</h3>
               <p class="possibilities-card-body__description">
                 Робот-помощник анализирует актив и дает рекомендации по
@@ -176,47 +173,58 @@
       </div>
 
       <section class="getting pd-60">
+        <h2 class="getting-container__heading container">Что вы получаете</h2>
         <ul class="getting-container container">
-          <li class="getting-container__header">
-            <h1 class="getting-container__heading">Что вы получаете</h1>
+          <li class="getting-container__item">
+            <img
+              class="getting-container__img"
+              src="images/getting-1.svg"
+              alt="getting-image-1"
+            />
+            <div class="getting-container-text">
+              <h3 class="getting-container__title">
+                Увеличится % положительных сделок
+              </h3>
+              <p class="getting-container__description">
+                При следовании рекомендациям робота-помощника все ваши сделки
+                будут по тренду, что увеличит % положительных сделок.
+              </p>
+            </div>
           </li>
-          <li class="getting-container__img">
-            <img src="images/getting-1.svg" alt="getting-image-1" />
+          <li class="getting-container__item">
+            <img
+              class="getting-container__img"
+              src="images/getting-2.svg"
+              alt="getting-image-2"
+            />
+            <div class="getting-container-text">
+              <h3 class="getting-container__title">Понятный риск-менеджмент</h3>
+              <p class="getting-container__description">
+                Всегда правильные стоп-лос и тейк-профит, расчитаный на
+                основании волатильности инструмента, а не мифические и не
+                понятные 5%, 20%, 30% неизвестно от чего.
+              </p>
+            </div>
           </li>
-          <li class="getting-container__text">
-            <h3 class="getting-container__title">
-              Увеличится % положительных сделок
-            </h3>
-            <p class="getting-container__description">
-              При следовании рекомендациям робота-помощника все ваши сделки
-              будут по тренду, что увеличит % положительных сделок.
-            </p>
-          </li>
-          <li class="getting-container__img">
-            <img src="images/getting-2.svg" alt="getting-image-2" />
-          </li>
-          <li class="getting-container__text">
-            <h3 class="getting-container__title">Понятный риск-менеджмент</h3>
-            <p class="getting-container__description">
-              Всегда правильные стоп-лос и тейк-профит, расчитаный на основании
-              волатильности инструмента, а не мифические и не понятные 5%, 20%,
-              30% неизвестно от чего.
-            </p>
-          </li>
-          <li class="getting-container__img">
-            <img src="images/getting-3.svg" alt="getting-image-3" />
-          </li>
-          <li class="getting-container__text">
-            <h3 class="getting-container__title">
-              Уменьшение количества убыточных сделок
-            </h3>
-            <p class="getting-container__description">
-              За счет автоматического поиска уровней, вы сможете сократить число
-              не системных сделок совершая сделки от ценовых уровней.
-            </p>
+          <li class="getting-container__item">
+            <img
+              class="getting-container__img"
+              src="images/getting-3.svg"
+              alt="getting-image-3"
+            />
+            <div class="getting-container-text">
+              <h3 class="getting-container__title">
+                Уменьшение количества убыточных сделок
+              </h3>
+              <p class="getting-container__description">
+                За счет автоматического поиска уровней, вы сможете сократить
+                число не системных сделок совершая сделки от ценовых уровней.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
+
       <section class="banner container banner-background">
         <div class="banner-body">
           <div class="banner-body__description">
@@ -244,12 +252,37 @@
             </div>
           </div>
           <div class="partners-logo">
-            <img src="images/binance-logo.svg" alt="binance-logo" />
-            <img src="images/huobi-logo.png" alt="huobi-logo" />
-            <img src="images/okex-logo.svg" alt="okex-logo" />
-            <img src="images/bitfinex-logo.svg" alt="bitfinex-logo" />
-            <img src="images/hitbtc-logo.svg" alt="hitbtc-logo" />
-            <img src="images/bitstamp-logo.svg" alt="bitstamp-logo" />
+            <img
+              class="partners-logo-binance"
+              src="images/binance-logo.svg"
+              alt="binance-logo"
+            />
+            <img
+              class="partners-logo-huobi"
+              src="images/huobi-logo.png"
+              alt="huobi-logo"
+            />
+            <img
+              class="partners-logo-okex"
+              src="images/okex-logo.svg"
+              alt="okex-logo"
+            />
+
+            <img
+              class="partners-logo-bitfinex"
+              src="images/bitfinex-logo.svg"
+              alt="bitfinex-logo"
+            />
+            <img
+              class="partners-logo-hitbtc"
+              src="images/hitbtc-logo.svg"
+              alt="hitbtc-logo"
+            />
+            <img
+              class="partners-logo-bitstamp"
+              src="images/bitstamp-logo.svg"
+              alt="bitstamp-logo"
+            />
           </div>
         </div>
       </section>
@@ -262,25 +295,27 @@
                 Можете задать нам любой вопрос про бота
               </div>
             </div>
-            <form class="feedback-form" action="/my-form-page" method="post">
-              <div class="feedback-form__name">
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  class="input-name"
-                  placeholder="Имя"
-                />
-              </div>
+            <form class="feedback-form" id="form">
+              <div class="feedback-form__row">
+                <div class="feedback-form__name">
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    class="input-name"
+                    placeholder="Имя"
+                  />
+                </div>
 
-              <div class="feedback-form__mail">
-                <input
-                  type="email"
-                  id="mail"
-                  name="user_email"
-                  class="input-email"
-                  placeholder="Email"
-                />
+                <div class="feedback-form__mail">
+                  <input
+                    type="email"
+                    id="mail"
+                    name="user_email"
+                    class="input-email"
+                    placeholder="Email"
+                  />
+                </div>
               </div>
 
               <div class="feedback-form__msg">
@@ -306,6 +341,7 @@
                 </button>
               </div>
             </form>
+            <button onclick="topFunction()" class="button-up"></button>
           </div>
         </div>
       </section>

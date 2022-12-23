@@ -30,6 +30,7 @@ body {
 
 .container {
   padding: 0 12px;
+  margin: 0 auto;
 }
 
 .header {
@@ -45,11 +46,13 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   background-color: #ffffff;
   z-index: 2;
   filter: drop-shadow(0px 0px 34px rgba(208, 208, 208, 0.4));
+
+  margin: 0 auto;
 }
 
 .header__body {
@@ -154,6 +157,7 @@ body.lock {
   list-style: none;
   margin-bottom: 40px;
 }
+
 .header__link {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -165,24 +169,16 @@ body.lock {
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #3355ff;
+}
+
 .banner-main {
   position: relative;
   padding-top: 52px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.banner-main::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("images/background.svg");
+  background-image: url("images/main-background.png");
   background-repeat: no-repeat;
-  background-position: top -131px right -606px;
-  content: "";
-  opacity: 0.7;
+  background-position: center center;
 }
 
 .main-body {
@@ -243,6 +239,10 @@ body.lock {
   border-radius: 4px;
 }
 
+.main-body__description-btn:hover {
+  background: #1631b6;
+}
+
 .main-body__description-btn-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -273,6 +273,10 @@ body.lock {
   display: inline-block;
 
   margin-right: 8.2px;
+}
+
+.main {
+  position: relative;
 }
 
 .statistics-card-body {
@@ -317,27 +321,18 @@ body.lock {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 
   gap: 61px;
 }
 
-.possibilities-card-containerf:first-child {
-  justify-content: flex-start;
-}
 .possibilities-card-body {
-  display: flex;
-}
-
-.possibilities-card-body:not(:first-child) {
-  flex-direction: column;
-  align-items: flex-start;
-
   width: 296px;
   background: #ffffff;
   box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 
-  padding: 0px 0px 24px 24px;
+  padding: 0px 18px 24px 24px;
 }
 
 .possibilities-card-body__heading {
@@ -347,7 +342,7 @@ body.lock {
   font-size: 40px;
   line-height: 47px;
 
-  padding-bottom: 73px;
+  padding-bottom: 12px;
 }
 
 .possibilities-card-body__img {
@@ -409,6 +404,16 @@ body.lock {
 .getting-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+}
+
+.getting-container__item {
+  min-width: 296px;
+}
+
+.getting-container-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .getting-container__heading {
@@ -421,16 +426,8 @@ body.lock {
   margin-bottom: 32px;
 }
 
-.getting-container__img {
-  margin-bottom: 24px;
-}
-
-.getting-container__img > img {
-  width: 296px;
-}
-
-.getting-container__text {
-  margin-bottom: 32px;
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .getting-container__title {
@@ -449,14 +446,25 @@ body.lock {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
+  margin-bottom: 32px;
+}
+
+.getting-container__img {
+  width: 296px;
+  margin-bottom: 24px;
 }
 
 .banner {
   position: relative;
+  background-image: url("images/banner-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 70px;
 }
 
 .banner-background {
-  background: #4867ff;
+  background-color: #4867ff;
 }
 
 .banner-body {
@@ -493,7 +501,7 @@ body.lock {
   justify-content: center;
   align-items: center;
 
-  min-width: 296px;
+  width: 276px;
   height: 60px;
 
   border-radius: 4px;
@@ -501,6 +509,11 @@ body.lock {
   border: 2px solid #ffffff;
 
   margin-top: 14px;
+}
+
+.banner-body__description-btn:hover {
+  cursor: pointer;
+  background: #3f60fe;
 }
 
 .banner-body__description-btn-text {
@@ -515,36 +528,27 @@ body.lock {
   margin-right: 8px;
 }
 
-.banner:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("images/banner-background.svg");
-  background-repeat: no-repeat;
-  background-position: 0px 0px;
-  content: "";
-}
-
 .banner-body__image img {
   width: 208px;
   height: 154px;
   position: absolute;
   top: -58px;
-  left: 138px;
+  right: -25px;
 }
 
 .partners-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 60px 0px;
 }
 
 .partners-text {
   display: flex;
   flex-direction: column;
+  width: 296px;
+
+  margin-bottom: 32px;
 }
 
 .partners-text__title {
@@ -566,13 +570,48 @@ body.lock {
 }
 
 .partners-logo {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
-.partners-logo img {
+.partners-logo-binance {
+  margin-bottom: 55px;
+  width: 72%;
+}
+
+.partners-logo-huobi {
+  margin-bottom: 58px;
+  width: 91%;
+}
+
+.partners-logo-okex {
+  margin-bottom: 54px;
+  width: 63%;
+}
+
+.partners-logo-bitfinex {
+  margin-bottom: 17px;
+  width: 84%;
+}
+
+.partners-logo-hitbtc {
+  margin-bottom: 72px;
+  width: 67.5%;
+}
+
+.partners-logo-bitstamp {
+  margin-bottom: 58px;
+  width: 56%;
+}
+
+.feedback-form {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
+}
+
+.feedback-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback-text__title {
@@ -595,13 +634,21 @@ body.lock {
   margin-bottom: 32px;
 }
 
+.feedback-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  width: 100%;
+}
+
 .feedback-form__name {
   background: #edeeef;
   border: 1px solid #e3e5e6;
   border-radius: 4px;
   padding: 20px 56px 15px 24px;
 
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .feedback-form__mail {
@@ -610,7 +657,7 @@ body.lock {
   border-radius: 4px;
   padding: 20px 56px 15px 24px;
 
-  margin-bottom: 16px;
+  width: 100%;
 }
 
 .feedback-form__msg {
@@ -622,6 +669,8 @@ body.lock {
   padding: 20px 179px 190px 24px;
 
   margin-bottom: 12px;
+
+  width: 100%;
 }
 
 .feedback-form__msg textarea {
@@ -639,8 +688,14 @@ body.lock {
   color: #b8b8b8;
 
   position: absolute;
-  top: 189px;
-  left: 220px;
+  bottom: 21px;
+  right: 28px;
+}
+
+.feedback-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .feedback-form ::placeholder {
@@ -679,12 +734,22 @@ body.lock {
   margin-bottom: 12px;
 }
 
+.feedback-form__button {
+  display: flex;
+  width: 296px;
+  width: 100%;
+}
+
 .button-feedback {
+  display: flex;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+
+  width: 100%;
 
   color: #ffffff;
 
@@ -693,6 +758,28 @@ body.lock {
 
   padding: 18px 70.5px;
 }
+
+.button-feedback:hover {
+  background-color: #1631b6;
+}
+
+.button-up {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  right: 83px;
+  border: 2px solid #3355ff;
+  border-radius: 50%;
+
+  background-image: url("images/arrow-button-up.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  cursor: pointer;
+  z-index: 50;
+}
+
 .footer-info {
   background: #122791;
 }
@@ -738,8 +825,100 @@ body.lock {
     width: 360px;
   }
 
-  .getting-container__img > img {
+  .possibilities-card-container {
+    gap: 61px 24px;
+  }
+
+  .possibilities-card-body {
     width: 360px;
+  }
+
+  .possibilities-card-body__heading {
+    width: 100%;
+  }
+
+  .getting-container__img {
+    width: 360px;
+  }
+
+  .banner {
+    margin-top: 100px;
+  }
+
+  .banner-body {
+    padding: 44px 0px;
+  }
+
+  .banner-body__image img {
+    width: 552px;
+    height: 424px;
+    top: -100px;
+    right: -88px;
+  }
+
+  .partners-container {
+    padding: 100px 0px;
+  }
+
+  .partners-text {
+    width: 232px;
+  }
+
+  .partners-logo {
+  }
+
+  .column-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feedback-form__row {
+    gap: 24px;
+  }
+
+  .feedback-form__name {
+    max-width: 360px;
+  }
+
+  .feedback-form__mail {
+    max-width: 360px;
+  }
+
+  .feedback-form {
+    max-width: 744px;
+    gap: 24px;
+  }
+
+  .partners-container {
+    gap: 24px;
+  }
+
+  .partners-logo {
+    grid-template-columns: 244px 244px;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .partners-logo img {
+    margin: inherit;
+  }
+
+  .partners-logo .partners-logo-okex {
+    margin: auto 0;
+  }
+
+  .partners-logo .partners-logo-bitfinex {
+    margin: auto 0;
+  }
+
+  .partners-logo .partners-logo-bitstamp {
+    margin: auto 0 0 0;
   }
 }
 
@@ -808,28 +987,150 @@ body.lock {
     max-width: 240px;
   }
 
-  .getting-container__text {
-    width: 504px;
+  .possibilities-card-body {
+    width: 328px;
   }
 
-  .getting-container {
-    justify-content: space-between;
+  .possibilities-card-body__heading {
+    width: 328px;
   }
 
-  .getting-container li {
+  .getting-container__item {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
   }
 
-  /* .getting-container :nth-of-type(1) {
-    order: ;
+  .getting-container__item:nth-child(odd) {
+    flex-direction: row-reverse;
   }
-  .getting-container :nth-of-type(2) {
-    order: ;
-  } */
+
+  .getting-container-text {
+    max-width: 504px;
+  }
+
+  .getting-container__heading {
+    margin-bottom: -40px;
+  }
+
+  .banner {
+    margin-top: 128px;
+  }
+
+  .banner-body {
+    padding: 61px 0px;
+  }
+
+  .banner-body__image img {
+    width: 722px;
+    height: 534px;
+    top: -177px;
+    right: 77px;
+  }
+
+  .partners-container {
+    gap: 35px;
+  }
+
+  .partners-text {
+    width: 293px;
+  }
+
+  .partners-logo {
+    grid-template-columns: 240px 292px 172px;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .partners-logo .partners-logo-binance {
+    margin: auto 0;
+  }
+
+  .partners-logo .partners-logo-huobi {
+    margin: auto 0;
+  }
+
+  .partners-logo .partners-logo-bitfinex {
+    margin: auto 0 0 0;
+  }
+
+  .partners-logo .partners-logo-hitbtc {
+    margin: auto auto 0 auto;
+  }
+
+  .partners-logo .partners-logo-okex {
+    width: 100%;
+    margin: auto 0;
+  }
+
+  .partners-logo .partners-logo-bitstamp {
+    width: 89%;
+    margin: auto 0 0 auto;
+  }
+
+  .feedback-container {
+    justify-content: center;
+  }
+
+  .feedback-text {
+    width: 272px;
+    margin-right: 15px;
+  }
+
+  .feedback-form__button {
+    width: 276px;
+  }
+
+  .button-feedback {
+    padding: 18px 60.5px;
+  }
 }
 
 @media (min-width: 1440px) {
   .container {
     padding: 0 132px;
+  }
+
+  .statistics-card-body__description {
+    max-width: 276px;
+  }
+
+  .possibilities-card-container {
+    justify-content: center;
+    max-width: 1440px;
+  }
+
+  .possibilities-card-body {
+    width: 376px;
+  }
+
+  .possibilities-card-body__heading {
+    width: 376px;
+  }
+
+  .getting {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .banner-body {
+    padding: 88px 0px;
+  }
+
+  .banner-body__image img {
+    width: 855px;
+    height: 633px;
+    top: -177px;
+    right: 77px;
+  }
+
+  .partners-container {
+    gap: 100px;
+  }
+
+  .feedback-text {
+    width: auto;
+    margin-right: 24px;
   }
 }
