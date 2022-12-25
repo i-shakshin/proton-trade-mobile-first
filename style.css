@@ -151,11 +151,7 @@ body.lock {
   z-index: 2;
   flex-direction: column;
   align-items: center;
-}
-
-.header__list li {
-  list-style: none;
-  margin-bottom: 40px;
+  gap: 40px;
 }
 
 .header__link {
@@ -164,12 +160,15 @@ body.lock {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-
-  color: #343a40;
-  text-decoration: none;
 }
 
-.header__link:hover {
+.header__link a {
+  text-decoration: none;
+
+  color: #343a40;
+}
+
+.header__link a:hover {
   color: #3355ff;
 }
 
@@ -269,10 +268,14 @@ body.lock {
 }
 
 .main-body__description-count::before {
-  content: url("images/count-use.svg");
   display: inline-block;
-
+  width: 38px;
+  height: 24px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 38px 24px;
   margin-right: 8.2px;
+  background-image: url("images/count-use.svg");
 }
 
 .main {
@@ -607,6 +610,8 @@ body.lock {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+
+  min-width: 296px;
 }
 
 .feedback-text {
@@ -696,6 +701,10 @@ body.lock {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+}
+
+.mn-auto {
+  margin: 0 auto;
 }
 
 .feedback-form ::placeholder {
@@ -809,6 +818,10 @@ body.lock {
     padding: 191px 0px 162px 0px;
   }
 
+  .main-body__name {
+    font-size: 74px;
+  }
+
   .main-body__description-count {
     justify-content: center;
   }
@@ -900,6 +913,10 @@ body.lock {
     gap: 24px;
   }
 
+  .feedback-text {
+    width: 232px;
+  }
+
   .partners-logo {
     grid-template-columns: 244px 244px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -923,6 +940,9 @@ body.lock {
 }
 
 @media (min-width: 1200px) {
+  .mn-top-64 {
+    margin-top: 64px;
+  }
   .container {
     padding: 0 84px;
   }
@@ -962,10 +982,14 @@ body.lock {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    margin-left: 40px;
 
     color: #343a40;
     text-decoration: none;
+    list-style: none;
+  }
+
+  .banner-main {
+    background-position: center right;
   }
 
   .main-body {
@@ -981,6 +1005,10 @@ body.lock {
 
   .main-body__description-btn {
     margin-right: 24px;
+  }
+
+  .main-body__description-count {
+    margin-top: 0px;
   }
 
   .statistics-card-body__description {
@@ -1071,6 +1099,11 @@ body.lock {
 
   .feedback-container {
     justify-content: center;
+  }
+
+  .mn-auto {
+    display: flex;
+    margin: 0;
   }
 
   .feedback-text {
